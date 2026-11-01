@@ -1,6 +1,6 @@
 # CORDISPHAERA
 
-**🎶 CORDISPHAERA — Harmonia Kinetica (v2.2.0)**
+**🎶 CORDISPHAERA — Harmonia Kinetica (v3.2.0)**
 
 CORDISPHAERA — Harmonia Kinetica is an interactive, pastel-themed kinetic music sandbox and visual instrument built for the browser. Combining a frosted-glass aesthetic with floating geometric sculptures, it lets players compose ambient melodies and rhythms by placing shapes, strumming vibrating strings, releasing bouncing orbs, and watching their creations translate into live scrolling sheet music in real time.
 
