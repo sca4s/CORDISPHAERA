@@ -1,33 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <meta name="theme-color" content="#F6F0F4" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="CORDISPHAERA" />
+  <meta id="themeColorMeta" name="theme-color" content="#F7F2FA" />
   <title>CORDISPHAERA — Harmonia Kinetica</title>
 
-  <!-- Game Icon (SVG Favicon & Apple Touch Icon) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23F7D6E0'/%3E%3Cstop offset='50%25' stop-color='%23C8B6FF'/%3E%3Cstop offset='100%25' stop-color='%23B8E0D2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23bg)'/%3E%3Crect x='3' y='3' width='58' height='58' rx='13' fill='rgba(255,255,255,0.65)' stroke='white' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%239B82F3' stroke-width='2.5' stroke-dasharray='4 4'/%3E%3Cpath d='M21 13V51M32 10V54M43 13V51' stroke='%23E08DAC' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='21' cy='26' r='5' fill='%23B8E0D2' stroke='%233D354B' stroke-width='2.2'/%3E%3Cpolygon points='32,29 39,40 25,40' fill='%23FDE4CF' stroke='%233D354B' stroke-width='2.2' stroke-linejoin='round'/%3E%3Crect x='38.5' y='18.5' width='9' height='9' rx='2.2' transform='rotate(45 43 23)' fill='%23C8B6FF' stroke='%233D354B' stroke-width='2.2'/%3E%3C/svg%3E" />
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23F7D6E0'/%3E%3Cstop offset='50%25' stop-color='%23C8B6FF'/%3E%3Cstop offset='100%25' stop-color='%23B8E0D2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23bg)'/%3E%3Crect x='3' y='3' width='58' height='58' rx='13' fill='rgba(255,255,255,0.65)' stroke='white' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%239B82F3' stroke-width='2.5' stroke-dasharray='4 4'/%3E%3Cpath d='M21 13V51M32 10V54M43 13V51' stroke='%23E08DAC' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='21' cy='26' r='5' fill='%23B8E0D2' stroke='%233D354B' stroke-width='2.2'/%3E%3Cpolygon points='32,29 39,40 25,40' fill='%23FDE4CF' stroke='%233D354B' stroke-width='2.2' stroke-linejoin='round'/%3E%3Crect x='38.5' y='18.5' width='9' height='9' rx='2.2' transform='rotate(45 43 23)' fill='%23C8B6FF' stroke='%233D354B' stroke-width='2.2'/%3E%3C/svg%3E" />
+  <!-- App Icon (SVG Favicon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23F9D8E6'/%3E%3Cstop offset='50%25' stop-color='%23CBB9FF'/%3E%3Cstop offset='100%25' stop-color='%23B5EAD7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='url(%23bg)'/%3E%3Crect x='3' y='3' width='58' height='58' rx='15' fill='rgba(255,255,255,0.68)' stroke='white' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%239B82F3' stroke-width='2.5' stroke-dasharray='4 4'/%3E%3Cpath d='M21 13V51M32 10V54M43 13V51' stroke='%23E08DAC' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='21' cy='26' r='5' fill='%23B5EAD7' stroke='%23352D46' stroke-width='2.2'/%3E%3Cpolygon points='32,29 39,40 25,40' fill='%23FFE5D0' stroke='%23352D46' stroke-width='2.2' stroke-linejoin='round'/%3E%3Crect x='38.5' y='18.5' width='9' height='9' rx='2.2' transform='rotate(45 43 23)' fill='%23CBB9FF' stroke='%23352D46' stroke-width='2.2'/%3E%3C/svg%3E" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root {
-      --bg-pearl: #FAF7F5;
-      --blush: #F7D6E0;
-      --lavender: #C8B6FF;
-      --mint: #B8E0D2;
-      --peach: #FFCAD4;
-      --periwinkle: #A9DEF9;
-      --buttercream: #FDE4CF;
-      --ink: #3D354B;
-      --ink-muted: #7A708B;
-      --glass-bg: rgba(255, 255, 255, 0.66);
-      --glass-border: rgba(255, 255, 255, 0.88);
-      --glass-shadow: 0 14px 36px rgba(61, 53, 75, 0.09), 0 3px 10px rgba(61, 53, 75, 0.04);
+    :root,
+    [data-theme="light"] {
+      --bg-base: #F8F3FA;
+      --ink: #322A42;
+      --ink-muted: #766B8A;
+      --ink-subtle: #5C5072;
+      --glass-surface: linear-gradient(145deg, rgba(255, 255, 255, 0.78) 0%, rgba(252, 246, 255, 0.56) 100%);
+      --glass-card-sub: rgba(255, 255, 255, 0.58);
+      --glass-pill: rgba(255, 255, 255, 0.66);
+      --glass-pill-hover: rgba(255, 255, 255, 0.92);
+      --glass-border: rgba(255, 255, 255, 0.92);
+      --glass-inner-glow: inset 0 1.5px 2px rgba(255, 255, 255, 0.95), inset 0 -1px 2px rgba(203, 185, 255, 0.18);
+      --glass-shadow: 0 20px 50px rgba(58, 46, 82, 0.09), 0 4px 14px rgba(58, 46, 82, 0.04);
+      --seg-bg: rgba(66, 54, 92, 0.07);
+      --seg-border: rgba(255, 255, 255, 0.78);
+      --seg-active-bg: rgba(255, 255, 255, 0.96);
+      --seg-active-shadow: 0 3px 10px rgba(61, 53, 75, 0.11), 0 1px 2px rgba(61, 53, 75, 0.06);
+      --slider-track: rgba(66, 54, 92, 0.14);
+      --slider-thumb-bg: #FFFFFF;
+      --slider-thumb-border: #C3B0FF;
+      --overlay-backdrop: rgba(248, 242, 252, 0.38);
+      --badge-bg: rgba(255, 255, 255, 0.82);
+      --danger-text: #B45776;
+      --active-toggle-bg: linear-gradient(135deg, rgba(203, 185, 255, 0.78), rgba(249, 216, 230, 0.86));
+      --active-toggle-text: #2A213B;
+    }
+
+    [data-theme="dark"] {
+      --bg-base: #110E1C;
+      --ink: #F4EFFC;
+      --ink-muted: #A99EC0;
+      --ink-subtle: #CFC5E6;
+      --glass-surface: linear-gradient(145deg, rgba(38, 32, 60, 0.76) 0%, rgba(24, 20, 40, 0.62) 100%);
+      --glass-card-sub: rgba(44, 37, 68, 0.54);
+      --glass-pill: rgba(48, 40, 74, 0.66);
+      --glass-pill-hover: rgba(66, 56, 98, 0.88);
+      --glass-border: rgba(216, 198, 255, 0.22);
+      --glass-inner-glow: inset 0 1.5px 2px rgba(255, 255, 255, 0.18), inset 0 -1px 2px rgba(176, 148, 255, 0.12);
+      --glass-shadow: 0 22px 54px rgba(5, 3, 12, 0.52), 0 4px 16px rgba(8, 5, 18, 0.35);
+      --seg-bg: rgba(15, 12, 26, 0.52);
+      --seg-border: rgba(216, 198, 255, 0.16);
+      --seg-active-bg: linear-gradient(135deg, rgba(102, 86, 152, 0.92), rgba(78, 64, 124, 0.92));
+      --seg-active-shadow: 0 3px 12px rgba(0, 0, 0, 0.36), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+      --slider-track: rgba(216, 198, 255, 0.2);
+      --slider-thumb-bg: #251F3A;
+      --slider-thumb-border: #D2C2FF;
+      --overlay-backdrop: rgba(14, 11, 24, 0.48);
+      --badge-bg: rgba(48, 40, 74, 0.82);
+      --danger-text: #FF9EBB;
+      --active-toggle-bg: linear-gradient(135deg, rgba(175, 149, 255, 0.45), rgba(244, 169, 203, 0.45));
+      --active-toggle-text: #FAF6FF;
     }
 
     * {
@@ -46,13 +80,13 @@
       overflow: hidden;
       position: fixed;
       inset: 0;
-      background: #F6F0F4;
+      background: var(--bg-base);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Helvetica Neue", sans-serif;
       -webkit-font-smoothing: antialiased;
+      transition: background-color 0.4s ease, color 0.35s ease;
     }
 
-    /* Main interactive canvas */
     #appCanvas {
       position: fixed;
       inset: 0;
@@ -64,67 +98,75 @@
       touch-action: none;
     }
 
-    /* iOS Frosted Glass Utility */
-    .ios-glass {
-      background: var(--glass-bg);
-      backdrop-filter: blur(24px) saturate(190%);
-      -webkit-backdrop-filter: blur(24px) saturate(190%);
+    /* Liquid Spatial Frosted Glass */
+    .spatial-glass {
+      background: var(--glass-surface);
+      backdrop-filter: blur(32px) saturate(210%);
+      -webkit-backdrop-filter: blur(32px) saturate(210%);
       border: 1px solid var(--glass-border);
-      box-shadow: var(--glass-shadow);
+      box-shadow: var(--glass-shadow), var(--glass-inner-glow);
+      transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
     }
 
-    .ios-pill-btn {
-      background: rgba(255, 255, 255, 0.62);
-      border: 1px solid rgba(255, 255, 255, 0.9);
+    .spatial-subcard {
+      background: var(--glass-card-sub);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--glass-inner-glow);
+      transition: background 0.35s ease, border-color 0.35s ease;
+    }
+
+    .pill-btn {
+      background: var(--glass-pill);
+      border: 1px solid var(--glass-border);
       color: var(--ink);
       border-radius: 999px;
-      padding: 5px 11px;
+      padding: 5.5px 12px;
       font-size: 11.5px;
       font-weight: 600;
       letter-spacing: -0.01em;
-      transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+      transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1);
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 5px;
       cursor: pointer;
-      box-shadow: 0 2px 6px rgba(61, 53, 75, 0.05);
+      box-shadow: 0 3px 10px rgba(32, 24, 48, 0.06), var(--glass-inner-glow);
       white-space: nowrap;
     }
 
     @media (min-width: 640px) {
-      .ios-pill-btn {
-        padding: 6px 14px;
+      .pill-btn {
+        padding: 6.5px 14px;
         font-size: 12.5px;
       }
     }
 
-    .ios-pill-btn:hover {
-      background: rgba(255, 255, 255, 0.9);
+    .pill-btn:hover {
+      background: var(--glass-pill-hover);
       transform: translateY(-1px);
     }
 
-    .ios-pill-btn:active {
-      transform: scale(0.96);
+    .pill-btn:active {
+      transform: scale(0.95);
     }
 
-    .ios-pill-btn.active-toggle {
-      background: linear-gradient(135deg, rgba(200, 182, 255, 0.7), rgba(247, 214, 224, 0.8));
-      border-color: rgba(255, 255, 255, 0.95);
-      color: #2E2540;
+    .pill-btn.active-toggle {
+      background: var(--active-toggle-bg);
+      color: var(--active-toggle-text);
     }
 
-    /* iOS Segmented Control */
-    .ios-segmented {
+    /* Fluid Capsule Segmented Control */
+    .segmented-control {
       display: inline-flex;
       position: relative;
-      padding: 2.5px;
-      background: rgba(61, 53, 75, 0.07);
+      padding: 3px;
+      background: var(--seg-bg);
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.65);
+      border: 1px solid var(--seg-border);
+      transition: background 0.35s ease, border-color 0.35s ease;
     }
 
-    .ios-segment-btn {
+    .segment-btn {
       position: relative;
       z-index: 2;
       border: none;
@@ -132,55 +174,59 @@
       color: var(--ink-muted);
       font-size: 11px;
       font-weight: 600;
-      padding: 4px 10px;
+      padding: 4.5px 11px;
       border-radius: 999px;
       cursor: pointer;
-      transition: color 0.2s ease, transform 0.15s ease;
+      transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1);
       white-space: nowrap;
     }
 
     @media (min-width: 640px) {
-      .ios-segment-btn {
+      .segment-btn {
         font-size: 12px;
-        padding: 5px 13px;
+        padding: 5px 13.5px;
       }
     }
 
-    .ios-segment-btn.selected {
+    .segment-btn.selected {
       color: var(--ink);
-      background: rgba(255, 255, 255, 0.94);
-      box-shadow: 0 2px 8px rgba(61, 53, 75, 0.1), 0 1px 2px rgba(61, 53, 75, 0.06);
+      background: var(--seg-active-bg);
+      box-shadow: var(--seg-active-shadow);
     }
 
-    /* Custom Pastel Range Slider */
-    input[type="range"].ios-slider {
+    /* Pastel Range Slider */
+    input[type="range"].pastel-slider {
       -webkit-appearance: none;
       appearance: none;
       width: 64px;
       height: 5px;
       border-radius: 999px;
-      background: rgba(61, 53, 75, 0.14);
+      background: var(--slider-track);
       outline: none;
       cursor: pointer;
     }
 
     @media (min-width: 640px) {
-      input[type="range"].ios-slider {
+      input[type="range"].pastel-slider {
         width: 78px;
         height: 6px;
       }
     }
 
-    input[type="range"].ios-slider::-webkit-slider-thumb {
+    input[type="range"].pastel-slider::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
       width: 15px;
       height: 15px;
       border-radius: 50%;
-      background: #ffffff;
-      border: 2px solid #C8B6FF;
-      box-shadow: 0 2px 6px rgba(61, 53, 75, 0.18);
+      background: var(--slider-thumb-bg);
+      border: 2.2px solid var(--slider-thumb-border);
+      box-shadow: 0 2px 6px rgba(32, 24, 48, 0.22);
       transition: transform 0.15s ease;
+    }
+
+    input[type="range"].pastel-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.12);
     }
 
     /* Front Screen Overlay */
@@ -192,12 +238,13 @@
       align-items: center;
       justify-content: center;
       padding: 16px;
-      background: rgba(246, 240, 244, 0.35);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      background: var(--overlay-backdrop);
+      backdrop-filter: blur(16px) saturate(160%);
+      -webkit-backdrop-filter: blur(16px) saturate(160%);
       transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
                   transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-                  visibility 0.55s;
+                  visibility 0.55s,
+                  background-color 0.4s ease;
     }
 
     #frontScreen.hidden-screen {
@@ -207,25 +254,26 @@
       pointer-events: none;
     }
 
-    /* Shimmer Begin Button */
+    /* Iridescent Shimmer CTA Button */
     .begin-btn {
       position: relative;
       overflow: hidden;
-      background: linear-gradient(135deg, #C8B6FF 0%, #F7D6E0 50%, #FDE4CF 100%);
-      color: #352C47;
+      background: linear-gradient(135deg, #CEBDFF 0%, #F9D6E5 50%, #FFE4CE 100%);
+      color: #2B223C;
       font-weight: 700;
       font-size: 15.5px;
       letter-spacing: 0.01em;
       padding: 14px 36px;
       border-radius: 999px;
-      border: 1.5px solid rgba(255, 255, 255, 0.95);
-      box-shadow: 0 12px 30px rgba(200, 182, 255, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+      border: 1.5px solid rgba(255, 255, 255, 0.92);
+      box-shadow: 0 14px 32px rgba(188, 166, 255, 0.38), inset 0 1.5px 2px rgba(255, 255, 255, 0.95);
       cursor: pointer;
       transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     .begin-btn:hover {
       transform: translateY(-2px) scale(1.01);
+      box-shadow: 0 18px 36px rgba(188, 166, 255, 0.48), inset 0 1.5px 2px rgba(255, 255, 255, 0.98);
     }
 
     .begin-btn:active {
@@ -239,7 +287,7 @@
       left: -60%;
       width: 45%;
       height: 200%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.65), transparent);
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
       transform: rotate(25deg);
       animation: shimmerSweep 3.8s infinite ease-in-out;
     }
@@ -259,73 +307,83 @@
       max-height: 92dvh;
       overflow-y: auto;
     }
+
+    .text-ink { color: var(--ink); }
+    .text-muted { color: var(--ink-muted); }
+    .text-subtle { color: var(--ink-subtle); }
+    .danger-pill { color: var(--danger-text); }
   </style>
 </head>
 <body>
 
-  <!-- ==================== AESTHETIC PASTEL iOS FRONT SCREEN ==================== -->
+  <!-- ==================== SPATIAL PASTEL WELCOME SCREEN ==================== -->
   <div id="frontScreen">
-    <div class="ios-glass float-card relative max-w-md w-full rounded-[32px] p-6 sm:p-8 text-center">
-      <!-- Game App Icon -->
-      <div class="mx-auto mb-3.5 w-16 h-16 sm:w-20 sm:h-20 rounded-[22px] flex items-center justify-center shadow-md"
-           style="background: linear-gradient(135deg, #F7D6E0 0%, #C8B6FF 52%, #B8E0D2 100%); padding: 3px;">
-        <div class="w-full h-full rounded-[19px] flex items-center justify-center"
-             style="background: rgba(255, 255, 255, 0.78); border: 1px solid rgba(255,255,255,0.95);">
+    <div class="spatial-glass float-card relative max-w-md w-full rounded-[36px] p-6 sm:p-8 text-center">
+
+      <!-- Top-Right Quick Theme Switcher on Welcome Card -->
+      <button id="frontThemeBtn" type="button" class="pill-btn absolute top-5 right-5" title="Switch between Light and Dark Mode">
+        <span id="frontThemeIcon" class="text-xs">☀️</span>
+        <span id="frontThemeText" class="text-[11px]">Light</span>
+      </button>
+
+      <!-- Emblem Icon -->
+      <div class="mx-auto mb-3.5 w-16 h-16 sm:w-20 sm:h-20 rounded-[24px] flex items-center justify-center shadow-md"
+           style="background: linear-gradient(135deg, #F9D8E6 0%, #CBB9FF 52%, #B5EAD7 100%); padding: 3px;">
+        <div class="w-full h-full rounded-[21px] flex items-center justify-center"
+             style="background: rgba(255, 255, 255, 0.82); border: 1px solid rgba(255,255,255,0.96);">
           <svg width="40" height="40" viewBox="0 0 36 36" fill="none">
             <circle cx="18" cy="18" r="13.5" stroke="#9B82F3" stroke-width="2" stroke-dasharray="3 3"/>
             <path d="M12 6.5V29.5M18 4.5V31.5M24 6.5V29.5" stroke="#E08DAC" stroke-width="2.2" stroke-linecap="round"/>
-            <circle cx="12" cy="15" r="3.2" fill="#B8E0D2" stroke="#3D354B" stroke-width="1.5"/>
-            <polygon points="18,17 22.2,23.5 13.8,23.5" fill="#FDE4CF" stroke="#3D354B" stroke-width="1.5" stroke-linejoin="round"/>
-            <rect x="21.5" y="10.5" width="5.2" height="5.2" rx="1.5" transform="rotate(45 24 13)" fill="#C8B6FF" stroke="#3D354B" stroke-width="1.5"/>
+            <circle cx="12" cy="15" r="3.2" fill="#B5EAD7" stroke="#352D46" stroke-width="1.5"/>
+            <polygon points="18,17 22.2,23.5 13.8,23.5" fill="#FFE5D0" stroke="#352D46" stroke-width="1.5" stroke-linejoin="round"/>
+            <rect x="21.5" y="10.5" width="5.2" height="5.2" rx="1.5" transform="rotate(45 24 13)" fill="#CBB9FF" stroke="#352D46" stroke-width="1.5"/>
           </svg>
         </div>
       </div>
 
-      <!-- Quotation Badge: "MADE BY SOU." -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full mb-2.5"
-           style="background: rgba(255, 255, 255, 0.76); border: 1px solid rgba(255, 255, 255, 0.95); box-shadow: 0 4px 12px rgba(61,53,75,0.05);">
-        <span class="w-2 h-2 rounded-full" style="background: #E598B8;"></span>
-        <span class="text-[10.5px] font-bold tracking-[0.2em] text-[#4A3F5C]">"MADE BY SOU."</span>
-        <span class="w-2 h-2 rounded-full" style="background: #9AC5F4;"></span>
+      <!-- Signature Badge: "MADE BY SOU." -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full mb-2.5 spatial-subcard">
+        <span class="w-2 h-2 rounded-full" style="background: #EB9AB8;"></span>
+        <span class="text-[10.5px] font-bold tracking-[0.2em] text-subtle">"MADE BY SOU."</span>
+        <span class="w-2 h-2 rounded-full" style="background: #9AC8F7;"></span>
       </div>
 
-      <!-- Unique Latin App Title -->
-      <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#3D354B] mb-1"
+      <!-- App Title -->
+      <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-ink mb-1"
           style="letter-spacing: 0.05em;">
         CORDISPHAERA
       </h1>
-      <p class="text-xs sm:text-sm font-medium text-[#7A708B] mb-5">
+      <p class="text-xs sm:text-sm font-medium text-muted mb-5">
         Harmonia Kinetica &mdash; Strings, Percussion &amp; Live Notation
       </p>
 
       <!-- Instrument Pre-Selector Card -->
-      <div class="rounded-[22px] p-3.5 sm:p-4 mb-5 text-left"
-           style="background: rgba(255, 255, 255, 0.56); border: 1px solid rgba(255, 255, 255, 0.85);">
+      <div class="spatial-subcard rounded-[24px] p-3.5 sm:p-4 mb-5 text-left">
         <div class="flex items-center justify-between gap-2 mb-2.5">
-          <span class="text-[10.5px] font-bold uppercase tracking-wider text-[#7A708B]">Choose Instrument</span>
-          <span id="frontInstrumentTag" class="text-[11px] font-semibold text-[#6C5B8E] text-right">6 Strings &bull; Warm Wood</span>
+          <span class="text-[10.5px] font-bold uppercase tracking-wider text-muted">Choose Instrument</span>
+          <span id="frontInstrumentTag" class="text-[11px] font-semibold text-subtle text-right">6 Strings &bull; Warm Wood</span>
         </div>
 
-        <div class="ios-segmented w-full grid grid-cols-3 text-center" id="frontInstrumentPicker">
-          <button type="button" data-instrument="acoustic" class="ios-segment-btn selected">Acoustic</button>
-          <button type="button" data-instrument="electric" class="ios-segment-btn">Electric</button>
-          <button type="button" data-instrument="bass" class="ios-segment-btn">Bass Guitar</button>
+        <div class="segmented-control w-full grid grid-cols-3 text-center" id="frontInstrumentPicker">
+          <button type="button" data-instrument="acoustic" class="segment-btn selected">Acoustic</button>
+          <button type="button" data-instrument="electric" class="segment-btn">Electric</button>
+          <button type="button" data-instrument="bass" class="segment-btn">Bass Guitar</button>
         </div>
       </div>
 
       <!-- Mini How-To Pills -->
       <div class="grid grid-cols-3 gap-2 mb-5 text-center">
-        <div class="rounded-2xl p-2" style="background: rgba(255,255,255,0.48); border: 1px solid rgba(255,255,255,0.78);">
-          <div class="text-[11.5px] font-bold text-[#3D354B]">Tap Lanes</div>
-          <div class="text-[10px] text-[#7A708B] leading-tight mt-0.5">Drop pastel shapes</div>
+        <div class="spatial-subcard rounded-[20px] p-2.5">
+          <div class="text-[11.5px] font-bold text-ink">Tap Lanes</div>
+          <div class="text-[10px] text-muted leading-tight mt-0.5">Drop pastel shapes</div>
         </div>
-        <div class="rounded-2xl p-2" style="background: rgba(255,255,255,0.48); border: 1px solid rgba(255,255,255,0.78);">
-          <div class="text-[11.5px] font-bold text-[#3D354B]">Swipe Strings</div>
-          <div class="text-[10px] text-[#7A708B] leading-tight mt-0.5">Pluck live chords</div>
+        <div class="spatial-subcard rounded-[20px] p-2.5">
+          <div class="text-[11.5px] font-bold text-ink">Swipe Strings</div>
+          <div class="text-[10px] text-muted leading-tight mt-0.5">Strum live chords</div>
         </div>
-        <div class="rounded-2xl p-2" style="background: rgba(255,255,255,0.48); border: 1px solid rgba(255,255,255,0.78);">
-          <div class="text-[11.5px] font-bold text-[#3D354B]">Live Score</div>
-          <div class="text-[10px] text-[#7A708B] leading-tight mt-0.5">Auto sheet music</div>
+        <div class="spatial-subcard rounded-[20px] p-2.5">
+          <div class="text-[11.5px] font-bold text-ink">Live Score</div>
+          <div class="text-[10px] text-muted leading-tight mt-0.5">Auto sheet music</div>
         </div>
       </div>
 
@@ -337,44 +395,50 @@
   </div>
 
   <!-- ==================== COMPACT RESPONSIVE TOP HUD ==================== -->
-  <header id="topHud" class="fixed top-2 sm:top-3 left-1/2 -translate-x-1/2 z-20 flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-2xl sm:rounded-full ios-glass w-[95vw] sm:w-auto max-w-[96vw] transition-opacity duration-500">
-    <!-- Back to Title Screen Button with Mini Game Icon -->
-    <button id="homeBtn" class="ios-pill-btn" title="Return to CORDISPHAERA Title Screen">
+  <header id="topHud" class="fixed top-2 sm:top-3 left-1/2 -translate-x-1/2 z-20 flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3.5 sm:py-2 rounded-[26px] sm:rounded-full spatial-glass w-[95vw] sm:w-auto max-w-[96vw]">
+    <!-- Back to Title Screen Button -->
+    <button id="homeBtn" class="pill-btn" title="Return to CORDISPHAERA Title Screen">
       <svg width="16" height="16" viewBox="0 0 36 36" fill="none" class="shrink-0">
-        <rect x="2" y="2" width="32" height="32" rx="8" fill="#EDE7FA" stroke="#9B82F3" stroke-width="2"/>
+        <rect x="2" y="2" width="32" height="32" rx="9" fill="#EDE7FA" stroke="#9B82F3" stroke-width="2"/>
         <path d="M12 8V28M18 6V30M24 8V28" stroke="#E08DAC" stroke-width="2.4" stroke-linecap="round"/>
-        <circle cx="12" cy="15" r="3" fill="#B8E0D2" stroke="#3D354B" stroke-width="1.5"/>
-        <polygon points="18,17 22,23 14,23" fill="#FDE4CF" stroke="#3D354B" stroke-width="1.5" stroke-linejoin="round"/>
+        <circle cx="12" cy="15" r="3" fill="#B5EAD7" stroke="#352D46" stroke-width="1.5"/>
+        <polygon points="18,17 22,23 14,23" fill="#FFE5D0" stroke="#352D46" stroke-width="1.5" stroke-linejoin="round"/>
       </svg>
       <span class="hidden md:inline font-bold tracking-wider text-[11px]">CORDISPHAERA</span>
     </button>
 
     <!-- Live Instrument Segmented Control: Acoustic | Electric | Bass -->
-    <div class="ios-segmented" id="hudInstrumentPicker" title="Switch Guitar Timbre & Strings">
-      <button type="button" data-instrument="acoustic" class="ios-segment-btn selected">Acoustic</button>
-      <button type="button" data-instrument="electric" class="ios-segment-btn">Electric</button>
-      <button type="button" data-instrument="bass" class="ios-segment-btn">Bass</button>
+    <div class="segmented-control" id="hudInstrumentPicker" title="Switch Guitar Timbre & Strings">
+      <button type="button" data-instrument="acoustic" class="segment-btn selected">Acoustic</button>
+      <button type="button" data-instrument="electric" class="segment-btn">Electric</button>
+      <button type="button" data-instrument="bass" class="segment-btn">Bass</button>
     </div>
 
     <!-- Motion Flow Toggle -->
-    <button id="flowBtn" class="ios-pill-btn active-toggle" title="Toggle kinetic pulse travelers">
-      <span class="w-2 h-2 rounded-full bg-[#6C5B8E] animate-pulse" id="flowDot"></span>
+    <button id="flowBtn" class="pill-btn active-toggle" title="Toggle kinetic pulse travelers">
+      <span class="w-2 h-2 rounded-full bg-[#8D76D9] animate-pulse" id="flowDot"></span>
       <span id="flowLabel">Flow: On</span>
     </button>
 
     <!-- Spawn Free-Bouncing Pastel Orb -->
-    <button id="spawnOrbBtn" class="ios-pill-btn" title="Release a free-bouncing pastel orb">
+    <button id="spawnOrbBtn" class="pill-btn" title="Release a free-bouncing pastel orb">
       <span>+ Orb</span>
     </button>
 
     <!-- Compact Tempo Control -->
-    <div class="hidden sm:flex items-center gap-1.5 px-1.5 py-0.5 text-[11px] font-semibold text-[#6E6480]">
+    <div class="hidden sm:flex items-center gap-1.5 px-1.5 py-0.5 text-[11px] font-semibold text-muted">
       <span>Tempo</span>
-      <input id="speedSlider" type="range" class="ios-slider" min="1.0" max="5.6" step="0.2" value="2.4" />
+      <input id="speedSlider" type="range" class="pastel-slider" min="1.0" max="5.6" step="0.2" value="2.4" />
     </div>
 
+    <!-- Light / Dark Mode Switcher -->
+    <button id="themeToggleBtn" class="pill-btn" title="Toggle between Light and Dark Mode">
+      <span id="themeIcon" class="text-xs">☀️</span>
+      <span id="themeLabel">Light</span>
+    </button>
+
     <!-- Clear Shapes & Score -->
-    <button id="clearBtn" class="ios-pill-btn text-[#9E5872]" title="Clear shapes, orbs, and sheet music">
+    <button id="clearBtn" class="pill-btn danger-pill" title="Clear shapes, orbs, and sheet music">
       Clear
     </button>
   </header>
@@ -384,13 +448,16 @@
 
   <script>
     // ============================================================================
-    // CORDISPHAERA — Responsive Pastel iOS Kinetic Instrument & Live Sheet Music
+    // CORDISPHAERA — Harmonia Kinetica
     // "MADE BY SOU."
     // ============================================================================
 
     const canvas = document.getElementById('appCanvas');
     const ctx = canvas.getContext('2d');
     const topHud = document.getElementById('topHud');
+
+    // --- Theme State ('light' | 'dark') ---
+    let currentTheme = 'light';
 
     // --- Responsive Viewport & Layout Metrics ---
     let width = window.innerWidth;
@@ -430,12 +497,12 @@
         clef: '𝄞',
         clefOffset: 1.75,
         strings: [
-          { name: 'E4', baseFreq: 329.63, baseStep: 0,   color: '#E598B8', glow: '#F7D6E0', thickness: 1.7 },
-          { name: 'B3', baseFreq: 246.94, baseStep: -3,  color: '#D397F8', glow: '#E6CCFF', thickness: 2.0 },
-          { name: 'G3', baseFreq: 196.00, baseStep: -5,  color: '#A594F9', glow: '#C8B6FF', thickness: 2.3 },
-          { name: 'D3', baseFreq: 146.83, baseStep: -8,  color: '#7EC4CF', glow: '#A9DEF9', thickness: 2.6 },
-          { name: 'A2', baseFreq: 110.00, baseStep: -11, color: '#79C7A8', glow: '#B8E0D2', thickness: 3.0 },
-          { name: 'E2', baseFreq: 82.41,  baseStep: -14, color: '#F3A683', glow: '#FDE4CF', thickness: 3.4 }
+          { name: 'E4', baseFreq: 329.63, baseStep: 0,   color: '#E895B8', glow: '#FAD8E6', thickness: 1.7 },
+          { name: 'B3', baseFreq: 246.94, baseStep: -3,  color: '#D598FA', glow: '#EAD4FF', thickness: 2.0 },
+          { name: 'G3', baseFreq: 196.00, baseStep: -5,  color: '#A796FA', glow: '#D0C2FF', thickness: 2.3 },
+          { name: 'D3', baseFreq: 146.83, baseStep: -8,  color: '#7CC6D4', glow: '#B2E4FA', thickness: 2.6 },
+          { name: 'A2', baseFreq: 110.00, baseStep: -11, color: '#78CCA9', glow: '#BCE8D6', thickness: 3.0 },
+          { name: 'E2', baseFreq: 82.41,  baseStep: -14, color: '#F5A886', glow: '#FFE5D1', thickness: 3.4 }
         ]
       },
       electric: {
@@ -443,12 +510,12 @@
         clef: '𝄞',
         clefOffset: 1.75,
         strings: [
-          { name: 'E4', baseFreq: 329.63, baseStep: 0,   color: '#B185DB', glow: '#DEC9E9', thickness: 1.6 },
-          { name: 'B3', baseFreq: 246.94, baseStep: -3,  color: '#9A8CE8', glow: '#C8B6FF', thickness: 1.9 },
-          { name: 'G3', baseFreq: 196.00, baseStep: -5,  color: '#72AEE6', glow: '#A9DEF9', thickness: 2.1 },
-          { name: 'D3', baseFreq: 146.83, baseStep: -8,  color: '#6CD4B8', glow: '#B8E0D2', thickness: 2.4 },
-          { name: 'A2', baseFreq: 110.00, baseStep: -11, color: '#F497B6', glow: '#F7D6E0', thickness: 2.7 },
-          { name: 'E2', baseFreq: 82.41,  baseStep: -14, color: '#F6AC8D', glow: '#FFCAD4', thickness: 3.0 }
+          { name: 'E4', baseFreq: 329.63, baseStep: 0,   color: '#B689E0', glow: '#E3D0F0', thickness: 1.6 },
+          { name: 'B3', baseFreq: 246.94, baseStep: -3,  color: '#9C8EEA', glow: '#CFC0FF', thickness: 1.9 },
+          { name: 'G3', baseFreq: 196.00, baseStep: -5,  color: '#75B2EA', glow: '#B2E2FA', thickness: 2.1 },
+          { name: 'D3', baseFreq: 146.83, baseStep: -8,  color: '#6ED6BA', glow: '#BCE8D6', thickness: 2.4 },
+          { name: 'A2', baseFreq: 110.00, baseStep: -11, color: '#F598B8', glow: '#FAD8E6', thickness: 2.7 },
+          { name: 'E2', baseFreq: 82.41,  baseStep: -14, color: '#F7AE90', glow: '#FFD0D9', thickness: 3.0 }
         ]
       },
       bass: {
@@ -456,18 +523,18 @@
         clef: '𝄢',
         clefOffset: 2.25,
         strings: [
-          { name: 'G2', baseFreq: 98.00,  baseStep: 0,  color: '#9B82F3', glow: '#C8B6FF', thickness: 3.4 },
-          { name: 'D2', baseFreq: 73.42,  baseStep: -3, color: '#6CB8D6', glow: '#A9DEF9', thickness: 4.0 },
-          { name: 'A1', baseFreq: 55.00,  baseStep: -6, color: '#6EC2A3', glow: '#B8E0D2', thickness: 4.6 },
-          { name: 'E1', baseFreq: 41.20,  baseStep: -9, color: '#E88DAD', glow: '#F7D6E0', thickness: 5.2 }
+          { name: 'G2', baseFreq: 98.00,  baseStep: 0,  color: '#9E85F5', glow: '#CFC0FF', thickness: 3.4 },
+          { name: 'D2', baseFreq: 73.42,  baseStep: -3, color: '#6FBCD9', glow: '#B2E2FA', thickness: 4.0 },
+          { name: 'A1', baseFreq: 55.00,  baseStep: -6, color: '#70C4A5', glow: '#BCE8D6', thickness: 4.6 },
+          { name: 'E1', baseFreq: 41.20,  baseStep: -9, color: '#EA8FAF', glow: '#FAD8E6', thickness: 5.2 }
         ]
       }
     };
 
     const DRUM_DEFS = [
-      { id: 'hihat', label: 'HI-HAT', staffStep: 9, color: '#6BC4A6', fill: '#B8E0D2', isCrossNote: true },
-      { id: 'snare', label: 'SNARE',  staffStep: 4, color: '#79A8D8', fill: '#A9DEF9', isCrossNote: false },
-      { id: 'kick',  label: 'KICK',   staffStep: 0, color: '#E087A4', fill: '#F7D6E0', isCrossNote: false }
+      { id: 'hihat', label: 'HI-HAT', staffStep: 9, color: '#6CC6A8', fill: '#BCE8D6', isCrossNote: true },
+      { id: 'snare', label: 'SNARE',  staffStep: 4, color: '#7BAAE0', fill: '#B2E2FA', isCrossNote: false },
+      { id: 'kick',  label: 'KICK',   staffStep: 0, color: '#E389A6', fill: '#FAD8E6', isCrossNote: false }
     ];
 
     const PENTATONIC_ZONES = [
@@ -478,15 +545,46 @@
       { semitones: 12, stepOffset: 7, name: 'Octave' }
     ];
 
+    // ============================================================================
+    // LIGHT & DARK THEME CONTROLLER
+    // ============================================================================
+    function setTheme(mode) {
+      currentTheme = mode === 'dark' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      const isDark = currentTheme === 'dark';
+      const icon = isDark ? '🌙' : '☀️';
+      const label = isDark ? 'Dark' : 'Light';
+
+      const themeIcon = document.getElementById('themeIcon');
+      const themeLabel = document.getElementById('themeLabel');
+      const frontThemeIcon = document.getElementById('frontThemeIcon');
+      const frontThemeText = document.getElementById('frontThemeText');
+      const themeMeta = document.getElementById('themeColorMeta');
+
+      if (themeIcon) themeIcon.textContent = icon;
+      if (themeLabel) themeLabel.textContent = label;
+      if (frontThemeIcon) frontThemeIcon.textContent = icon;
+      if (frontThemeText) frontThemeText.textContent = label;
+      if (themeMeta) themeMeta.setAttribute('content', isDark ? '#110E1C' : '#F7F2FA');
+    }
+
+    function toggleTheme() {
+      setTheme(currentTheme === 'light' ? 'dark' : 'light');
+    }
+
+    document.getElementById('themeToggleBtn').addEventListener('click', toggleTheme);
+    document.getElementById('frontThemeBtn').addEventListener('click', toggleTheme);
+
     function initAmbientSculptures() {
       ambientSculptures.length = 0;
       const palette = [
-        { c1: '#F7D6E0', c2: '#E598B8' },
-        { c1: '#C8B6FF', c2: '#9B82F3' },
-        { c1: '#B8E0D2', c2: '#79C7A8' },
-        { c1: '#A9DEF9', c2: '#72AEE6' },
-        { c1: '#FDE4CF', c2: '#F3A683' },
-        { c1: '#FFCAD4', c2: '#E88DAD' }
+        { c1: '#F9D8E6', c2: '#E895B8' },
+        { c1: '#CBB9FF', c2: '#9E85F5' },
+        { c1: '#B5EAD7', c2: '#78CCA9' },
+        { c1: '#B2E2FA', c2: '#75B2EA' },
+        { c1: '#FFE5D0', c2: '#F5A886' },
+        { c1: '#FFD0D9', c2: '#EA8FAF' }
       ];
       const kinds = ['sphere', 'ring', 'arch', 'prism', 'capsule'];
       for (let i = 0; i < 11; i++) {
@@ -502,34 +600,40 @@
           vy: (Math.random() - 0.5) * 0.16,
           angle: Math.random() * Math.PI * 2,
           vAngle: (Math.random() - 0.5) * 0.004,
-          alpha: 0.25 + Math.random() * 0.2
+          alpha: 0.24 + Math.random() * 0.18
         });
       }
     }
 
     // ============================================================================
-    // WEB AUDIO API SYNTHESIZER
+    // GLITCH-PROOF WEB AUDIO SYNTHESIZER (VOICE POOLING & PRE-ALLOCATED BUFFERS)
     // ============================================================================
     let audioCtx = null;
     let masterCompressor = null;
+    let masterGain = null;
+    let electricDelaySend = null;
+    let sharedDriveCurve = null;
 
-    function ensureAudio() {
-      if (!audioCtx) {
-        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        masterCompressor = audioCtx.createDynamicsCompressor();
-        masterCompressor.threshold.setValueAtTime(-14, audioCtx.currentTime);
-        masterCompressor.knee.setValueAtTime(24, audioCtx.currentTime);
-        masterCompressor.ratio.setValueAtTime(4, audioCtx.currentTime);
-        masterCompressor.attack.setValueAtTime(0.005, audioCtx.currentTime);
-        masterCompressor.release.setValueAtTime(0.2, audioCtx.currentTime);
-        masterCompressor.connect(audioCtx.destination);
+    // Pre-allocated noise buffers so zero buffers are allocated during strumming
+    let pluckNoiseBuffer = null;
+    let snareNoiseBuffer = null;
+    let hihatNoiseBuffer = null;
+
+    // Polyphony management to prevent node overload during rapid continuous strumming
+    const activeVoices = [];
+    const MAX_ACTIVE_VOICES = 24;
+
+    function createNoiseBuffer(ctxInstance, durationSec, decayFactor) {
+      const len = Math.max(1, Math.floor(ctxInstance.sampleRate * durationSec));
+      const buf = ctxInstance.createBuffer(1, len, ctxInstance.sampleRate);
+      const data = buf.getChannelData(0);
+      for (let i = 0; i < len; i++) {
+        data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (len * decayFactor));
       }
-      if (audioCtx.state === 'suspended') {
-        audioCtx.resume();
-      }
+      return buf;
     }
 
-    function makeSoftDriveCurve(amount = 18) {
+    function makeSoftDriveCurve(amount = 14) {
       const k = amount;
       const nSamples = 256;
       const curve = new Float32Array(nSamples);
@@ -541,15 +645,127 @@
       return curve;
     }
 
+    function ensureAudio() {
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AudioContextClass();
+
+        masterGain = audioCtx.createGain();
+        masterGain.gain.setValueAtTime(0.85, audioCtx.currentTime);
+
+        masterCompressor = audioCtx.createDynamicsCompressor();
+        masterCompressor.threshold.setValueAtTime(-16, audioCtx.currentTime);
+        masterCompressor.knee.setValueAtTime(24, audioCtx.currentTime);
+        masterCompressor.ratio.setValueAtTime(6, audioCtx.currentTime);
+        masterCompressor.attack.setValueAtTime(0.003, audioCtx.currentTime);
+        masterCompressor.release.setValueAtTime(0.18, audioCtx.currentTime);
+
+        masterGain.connect(masterCompressor);
+        masterCompressor.connect(audioCtx.destination);
+
+        // Shared Electric Delay Bus (avoids creating new DelayNodes per note)
+        const delayNode = audioCtx.createDelay(0.5);
+        const delayFeedback = audioCtx.createGain();
+        const delayWet = audioCtx.createGain();
+        const delayFilter = audioCtx.createBiquadFilter();
+
+        delayNode.delayTime.setValueAtTime(0.19, audioCtx.currentTime);
+        delayFeedback.gain.setValueAtTime(0.24, audioCtx.currentTime);
+        delayWet.gain.setValueAtTime(0.22, audioCtx.currentTime);
+        delayFilter.type = 'lowpass';
+        delayFilter.frequency.setValueAtTime(3200, audioCtx.currentTime);
+
+        electricDelaySend = audioCtx.createGain();
+        electricDelaySend.gain.setValueAtTime(1.0, audioCtx.currentTime);
+
+        electricDelaySend.connect(delayNode);
+        delayNode.connect(delayFilter);
+        delayFilter.connect(delayWet);
+        delayWet.connect(masterGain);
+
+        delayFilter.connect(delayFeedback);
+        delayFeedback.connect(delayNode);
+
+        // Pre-compute distortion curve and noise buffers once
+        sharedDriveCurve = makeSoftDriveCurve(14);
+        pluckNoiseBuffer = createNoiseBuffer(audioCtx, 0.024, 0.30);
+        snareNoiseBuffer = createNoiseBuffer(audioCtx, 0.16, 0.44);
+        hihatNoiseBuffer = createNoiseBuffer(audioCtx, 0.06, 0.26);
+      }
+
+      if (audioCtx.state === 'suspended' || audioCtx.state === 'interrupted') {
+        audioCtx.resume().catch(() => {});
+      }
+    }
+
+    // Resume audio automatically if tab visibility changes or window regains focus
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible' && audioCtx && audioCtx.state !== 'running') {
+        audioCtx.resume().catch(() => {});
+      }
+    });
+
+    function registerVoice(voiceObj) {
+      // Steal oldest voice if polyphony limit is reached
+      while (activeVoices.length >= MAX_ACTIVE_VOICES) {
+        const oldest = activeVoices.shift();
+        if (oldest && !oldest.cleaned) {
+          oldest.forceStop();
+        }
+      }
+      activeVoices.push(voiceObj);
+    }
+
+    function clampFilterFreq(freqVal) {
+      if (!audioCtx || !Number.isFinite(freqVal)) return 1000;
+      const maxSafe = Math.min(14000, audioCtx.sampleRate * 0.42);
+      return Math.max(40, Math.min(maxSafe, freqVal));
+    }
+
     function playGuitarNote(freq, shapeGeo = 'circle') {
       ensureAudio();
+      if (!audioCtx || !Number.isFinite(freq)) return;
+
       const now = audioCtx.currentTime;
+      const voiceNodes = [];
+      const voiceSources = [];
+      let voiceGain = null;
+
+      const voiceRecord = {
+        cleaned: false,
+        cleanup() {
+          if (this.cleaned) return;
+          this.cleaned = true;
+          const idx = activeVoices.indexOf(this);
+          if (idx !== -1) activeVoices.splice(idx, 1);
+          for (let i = 0; i < voiceNodes.length; i++) {
+            try { voiceNodes[i].disconnect(); } catch (_) {}
+          }
+        },
+        forceStop() {
+          if (this.cleaned) return;
+          try {
+            if (voiceGain && audioCtx) {
+              const t = audioCtx.currentTime;
+              voiceGain.gain.cancelScheduledValues(t);
+              voiceGain.gain.setTargetAtTime(0.0001, t, 0.008);
+            }
+          } catch (_) {}
+          setTimeout(() => {
+            for (let i = 0; i < voiceSources.length; i++) {
+              try { voiceSources[i].stop(); } catch (_) {}
+            }
+            this.cleanup();
+          }, 28);
+        }
+      };
 
       if (currentInstrument === 'acoustic') {
         const osc1 = audioCtx.createOscillator();
         const osc2 = audioCtx.createOscillator();
         const filter = audioCtx.createBiquadFilter();
         const gain = audioCtx.createGain();
+        voiceGain = gain;
 
         osc1.type = shapeGeo === 'triangle' ? 'sawtooth' : 'triangle';
         osc2.type = 'sine';
@@ -557,37 +773,37 @@
         osc2.frequency.setValueAtTime(freq * 2, now);
 
         filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(freq * 6.5, now);
-        filter.frequency.exponentialRampToValueAtTime(freq * 1.35, now + 1.15);
+        filter.Q.setValueAtTime(1.0, now);
+        filter.frequency.setValueAtTime(clampFilterFreq(freq * 6.0), now);
+        filter.frequency.exponentialRampToValueAtTime(clampFilterFreq(freq * 1.35), now + 0.95);
 
         gain.gain.setValueAtTime(0.001, now);
-        gain.gain.linearRampToValueAtTime(0.28, now + 0.009);
-        gain.gain.exponentialRampToValueAtTime(0.0008, now + 1.55);
+        gain.gain.linearRampToValueAtTime(0.22, now + 0.008);
+        gain.gain.exponentialRampToValueAtTime(0.0008, now + 1.15);
 
-        const noiseLen = Math.floor(audioCtx.sampleRate * 0.024);
-        const noiseBuf = audioCtx.createBuffer(1, noiseLen, audioCtx.sampleRate);
-        const data = noiseBuf.getChannelData(0);
-        for (let i = 0; i < noiseLen; i++) {
-          data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (noiseLen * 0.3));
-        }
         const noise = audioCtx.createBufferSource();
         const noiseGain = audioCtx.createGain();
-        noise.buffer = noiseBuf;
-        noiseGain.gain.setValueAtTime(0.11, now);
-        noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.024);
+        noise.buffer = pluckNoiseBuffer;
+        noiseGain.gain.setValueAtTime(0.08, now);
+        noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.022);
 
         osc1.connect(filter);
         osc2.connect(filter);
         noise.connect(noiseGain);
         noiseGain.connect(filter);
         filter.connect(gain);
-        gain.connect(masterCompressor);
+        gain.connect(masterGain);
+
+        voiceNodes.push(osc1, osc2, noise, noiseGain, filter, gain);
+        voiceSources.push(osc1, osc2, noise);
+
+        osc1.onended = () => voiceRecord.cleanup();
 
         osc1.start(now);
         osc2.start(now);
         noise.start(now);
-        osc1.stop(now + 1.6);
-        osc2.stop(now + 1.6);
+        osc1.stop(now + 1.18);
+        osc2.stop(now + 1.18);
 
       } else if (currentInstrument === 'electric') {
         const osc1 = audioCtx.createOscillator();
@@ -595,160 +811,169 @@
         const shaper = audioCtx.createWaveShaper();
         const filter = audioCtx.createBiquadFilter();
         const gain = audioCtx.createGain();
+        voiceGain = gain;
 
         osc1.type = 'sawtooth';
         osc2.type = 'triangle';
         osc1.frequency.setValueAtTime(freq, now);
         osc2.frequency.setValueAtTime(freq, now);
-        osc1.detune.setValueAtTime(-7, now);
-        osc2.detune.setValueAtTime(7, now);
+        osc1.detune.setValueAtTime(-6, now);
+        osc2.detune.setValueAtTime(6, now);
 
-        shaper.curve = makeSoftDriveCurve(16);
-        shaper.oversample = '2x';
+        shaper.curve = sharedDriveCurve;
+        shaper.oversample = 'none';
 
         filter.type = 'lowpass';
-        filter.Q.setValueAtTime(3.2, now);
-        filter.frequency.setValueAtTime(freq * 9, now);
-        filter.frequency.exponentialRampToValueAtTime(freq * 2.2, now + 1.4);
+        filter.Q.setValueAtTime(2.2, now);
+        filter.frequency.setValueAtTime(clampFilterFreq(freq * 7.2), now);
+        filter.frequency.exponentialRampToValueAtTime(clampFilterFreq(freq * 2.0), now + 1.1);
 
         gain.gain.setValueAtTime(0.001, now);
-        gain.gain.linearRampToValueAtTime(0.20, now + 0.012);
-        gain.gain.exponentialRampToValueAtTime(0.0008, now + 1.9);
-
-        const delay = audioCtx.createDelay();
-        const delayGain = audioCtx.createGain();
-        delay.delayTime.setValueAtTime(0.21, now);
-        delayGain.gain.setValueAtTime(0.26, now);
+        gain.gain.linearRampToValueAtTime(0.17, now + 0.01);
+        gain.gain.exponentialRampToValueAtTime(0.0008, now + 1.3);
 
         osc1.connect(shaper);
         osc2.connect(shaper);
         shaper.connect(filter);
         filter.connect(gain);
-        gain.connect(masterCompressor);
+        gain.connect(masterGain);
+        gain.connect(electricDelaySend);
 
-        gain.connect(delay);
-        delay.connect(delayGain);
-        delayGain.connect(masterCompressor);
+        voiceNodes.push(osc1, osc2, shaper, filter, gain);
+        voiceSources.push(osc1, osc2);
+
+        osc1.onended = () => voiceRecord.cleanup();
 
         osc1.start(now);
         osc2.start(now);
-        osc1.stop(now + 1.95);
-        osc2.stop(now + 1.95);
+        osc1.stop(now + 1.34);
+        osc2.stop(now + 1.34);
 
       } else if (currentInstrument === 'bass') {
         const subOsc = audioCtx.createOscillator();
         const bodyOsc = audioCtx.createOscillator();
         const filter = audioCtx.createBiquadFilter();
         const gain = audioCtx.createGain();
+        voiceGain = gain;
 
         subOsc.type = 'sine';
         bodyOsc.type = 'sawtooth';
-
         subOsc.frequency.setValueAtTime(freq, now);
         bodyOsc.frequency.setValueAtTime(freq, now);
 
         filter.type = 'lowpass';
-        filter.Q.setValueAtTime(4.0, now);
-        filter.frequency.setValueAtTime(freq * 7.5, now);
-        filter.frequency.exponentialRampToValueAtTime(freq * 1.5, now + 0.38);
+        filter.Q.setValueAtTime(2.6, now);
+        filter.frequency.setValueAtTime(clampFilterFreq(freq * 6.5), now);
+        filter.frequency.exponentialRampToValueAtTime(clampFilterFreq(freq * 1.4), now + 0.36);
 
         gain.gain.setValueAtTime(0.001, now);
-        gain.gain.linearRampToValueAtTime(0.42, now + 0.01);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 1.25);
+        gain.gain.linearRampToValueAtTime(0.32, now + 0.01);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.98);
 
         subOsc.connect(gain);
         bodyOsc.connect(filter);
         filter.connect(gain);
-        gain.connect(masterCompressor);
+        gain.connect(masterGain);
+
+        voiceNodes.push(subOsc, bodyOsc, filter, gain);
+        voiceSources.push(subOsc, bodyOsc);
+
+        subOsc.onended = () => voiceRecord.cleanup();
 
         subOsc.start(now);
         bodyOsc.start(now);
-        subOsc.stop(now + 1.3);
-        bodyOsc.stop(now + 1.3);
+        subOsc.stop(now + 1.02);
+        bodyOsc.stop(now + 1.02);
       }
+
+      registerVoice(voiceRecord);
     }
 
     function playDrumSound(drumId) {
       ensureAudio();
+      if (!audioCtx) return;
       const now = audioCtx.currentTime;
 
       if (drumId === 'kick') {
         const osc = audioCtx.createOscillator();
         const gain = audioCtx.createGain();
         osc.type = 'sine';
-        osc.frequency.setValueAtTime(138, now);
+        osc.frequency.setValueAtTime(135, now);
         osc.frequency.exponentialRampToValueAtTime(38, now + 0.12);
 
-        gain.gain.setValueAtTime(0.55, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.36);
+        gain.gain.setValueAtTime(0.46, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.32);
 
         osc.connect(gain);
-        gain.connect(masterCompressor);
+        gain.connect(masterGain);
+        osc.onended = () => {
+          try { osc.disconnect(); gain.disconnect(); } catch (_) {}
+        };
         osc.start(now);
-        osc.stop(now + 0.37);
+        osc.stop(now + 0.34);
 
       } else if (drumId === 'snare') {
         const osc = audioCtx.createOscillator();
         const oscGain = audioCtx.createGain();
         osc.type = 'triangle';
-        osc.frequency.setValueAtTime(190, now);
+        osc.frequency.setValueAtTime(188, now);
         osc.frequency.exponentialRampToValueAtTime(92, now + 0.08);
-        oscGain.gain.setValueAtTime(0.24, now);
+        oscGain.gain.setValueAtTime(0.20, now);
         oscGain.gain.exponentialRampToValueAtTime(0.001, now + 0.13);
         osc.connect(oscGain);
-        oscGain.connect(masterCompressor);
-        osc.start(now);
-        osc.stop(now + 0.14);
+        oscGain.connect(masterGain);
 
-        const bufLen = Math.floor(audioCtx.sampleRate * 0.17);
-        const buf = audioCtx.createBuffer(1, bufLen, audioCtx.sampleRate);
-        const data = buf.getChannelData(0);
-        for (let i = 0; i < bufLen; i++) {
-          data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (bufLen * 0.45));
-        }
         const noise = audioCtx.createBufferSource();
-        noise.buffer = buf;
+        noise.buffer = snareNoiseBuffer;
 
         const filter = audioCtx.createBiquadFilter();
         filter.type = 'highpass';
         filter.frequency.setValueAtTime(950, now);
 
         const nGain = audioCtx.createGain();
-        nGain.gain.setValueAtTime(0.25, now);
-        nGain.gain.exponentialRampToValueAtTime(0.001, now + 0.17);
+        nGain.gain.setValueAtTime(0.22, now);
+        nGain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
 
         noise.connect(filter);
         filter.connect(nGain);
-        nGain.connect(masterCompressor);
+        nGain.connect(masterGain);
+
+        osc.onended = () => {
+          try { osc.disconnect(); oscGain.disconnect(); } catch (_) {}
+        };
+        noise.onended = () => {
+          try { noise.disconnect(); filter.disconnect(); nGain.disconnect(); } catch (_) {}
+        };
+
+        osc.start(now);
+        osc.stop(now + 0.14);
         noise.start(now);
 
       } else if (drumId === 'hihat') {
-        const bufLen = Math.floor(audioCtx.sampleRate * 0.065);
-        const buf = audioCtx.createBuffer(1, bufLen, audioCtx.sampleRate);
-        const data = buf.getChannelData(0);
-        for (let i = 0; i < bufLen; i++) {
-          data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (bufLen * 0.28));
-        }
         const noise = audioCtx.createBufferSource();
-        noise.buffer = buf;
+        noise.buffer = hihatNoiseBuffer;
 
         const filter = audioCtx.createBiquadFilter();
         filter.type = 'highpass';
-        filter.frequency.setValueAtTime(6800, now);
+        filter.frequency.setValueAtTime(6500, now);
 
         const gain = audioCtx.createGain();
-        gain.gain.setValueAtTime(0.20, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.065);
+        gain.gain.setValueAtTime(0.18, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.058);
 
         noise.connect(filter);
         filter.connect(gain);
-        gain.connect(masterCompressor);
+        gain.connect(masterGain);
+
+        noise.onended = () => {
+          try { noise.disconnect(); filter.disconnect(); gain.disconnect(); } catch (_) {}
+        };
         noise.start(now);
       }
     }
 
     // ============================================================================
-    // RESPONSIVE LAYOUT & LANE MANAGEMENT (NO UI OVERLAP, NO DOCK CUTOFF)
+    // RESPONSIVE LAYOUT & LANE MANAGEMENT
     // ============================================================================
     function buildLanes(preserveShapes = true) {
       const oldGuitarCount = lanes.filter(l => l.type === 'guitar').length;
@@ -760,27 +985,22 @@
       const stringDefs = config.strings;
       const newGuitarCount = stringDefs.length;
 
-      // Scale factor based on device screen dimensions
       const minDim = Math.min(width, height);
       uiScale = Math.max(0.76, Math.min(1.3, minDim / 430));
 
-      // Horizontal margins scaled to screen width
       marginL = Math.round(Math.max(68, Math.min(110, width * 0.17)));
       marginR = Math.round(width - Math.max(16, Math.min(40, width * 0.04)));
       const newUsableW = Math.max(120, marginR - marginL);
 
-      // Measure actual rendered bottom of #topHud so strings are NEVER covered by UI
       const hudRect = topHud ? topHud.getBoundingClientRect() : { bottom: 60 };
       const safeHudBottom = Math.max(54, hudRect.bottom);
 
       fretHeaderY = safeHudBottom + Math.round(14 * uiScale);
       playTop = fretHeaderY + Math.round(18 * uiScale);
 
-      // Reserve guaranteed space at the bottom for the Live Sheet Music Dock
       bottomMargin = Math.round(Math.max(12, height * 0.018));
       const availableTotalH = Math.max(240, height - playTop - bottomMargin);
 
-      // Dock takes ~25% of total height (clamped so it always fits all notes & never gets cut off)
       dockHeight = Math.round(Math.max(132, Math.min(215, availableTotalH * 0.31)));
       staffTop = height - dockHeight - bottomMargin;
       playBottom = staffTop - Math.round(18 * uiScale);
@@ -789,7 +1009,6 @@
       const drumGapRatio = 0.35;
       const spacing = Math.max(18, (playBottom - playTop) / (totalRows - 1 + drumGapRatio));
 
-      // Adjust uiScale slightly if vertical spacing is tight on landscape phones
       const rowScale = Math.min(1.2, Math.max(0.68, spacing / 38));
       uiScale = Math.min(uiScale, rowScale * 1.15);
 
@@ -809,7 +1028,8 @@
           thickness: def.thickness * uiScale,
           y: playTop + idx * spacing,
           vibAmp: 0,
-          vibPhase: 0
+          vibPhase: 0,
+          lastTriggerMs: 0
         });
       });
 
@@ -827,11 +1047,11 @@
           color: def.color,
           fill: def.fill,
           y: playTop + drumGap + laneIndex * spacing,
-          flash: 0
+          flash: 0,
+          lastTriggerMs: 0
         });
       });
 
-      // Sync travelers proportionally across screen resizes
       travelers.length = 0;
       lanes.forEach((lane, i) => {
         const frac = previousTravelerFrac[i] !== undefined
@@ -843,7 +1063,6 @@
         });
       });
 
-      // Remap existing shapes proportionally when resizing or switching instruments
       shapes.forEach(s => {
         if (s.frac === undefined) {
           s.frac = Math.max(0.04, Math.min(0.96, (s.x - oldMarginL) / oldUsableW));
@@ -866,7 +1085,6 @@
     }
 
     function resizeCanvas() {
-      // Use visualViewport when available so mobile address/navigation bars never clip the bottom
       const vw = window.visualViewport ? window.visualViewport.width : window.innerWidth;
       const vh = window.visualViewport ? window.visualViewport.height : window.innerHeight;
 
@@ -889,7 +1107,6 @@
       window.visualViewport.addEventListener('scroll', resizeCanvas);
     }
 
-    // Seed starter arrangement using normalized horizontal fractions
     function seedStarterArrangement() {
       shapes.length = 0;
       const usableW = Math.max(120, marginR - marginL);
@@ -949,6 +1166,11 @@
       const lane = lanes[laneIndex];
       if (!lane) return;
 
+      // Per-lane micro-debounce (25ms) prevents audio engine flooding on rapid continuous strumming
+      const nowMs = performance.now();
+      if (nowMs - lane.lastTriggerMs < 25) return;
+      lane.lastTriggerMs = nowMs;
+
       const dockRightSpawn = width - Math.max(46, Math.round(58 * uiScale));
 
       if (lane.type === 'guitar') {
@@ -981,6 +1203,10 @@
           alpha: 1
         });
       }
+
+      // Cap total active sheet notes & ripples so rapid strumming never slows down canvas rendering
+      if (sheetNotes.length > 90) sheetNotes.shift();
+      if (ripples.length > 60) ripples.shift();
 
       ripples.push({
         x,
@@ -1057,7 +1283,7 @@
 
     document.getElementById('spawnOrbBtn').addEventListener('click', () => {
       ensureAudio();
-      const orbColors = ['#C8B6FF', '#F7D6E0', '#B8E0D2', '#A9DEF9', '#FDE4CF'];
+      const orbColors = ['#CBB9FF', '#F9D8E6', '#B5EAD7', '#B2E2FA', '#FFE5D0'];
       orbs.push({
         x: marginL + 24 + Math.random() * Math.max(80, marginR - marginL - 48),
         y: playTop + 10 + Math.random() * Math.max(60, playBottom - playTop - 20),
@@ -1079,7 +1305,7 @@
     });
 
     // ============================================================================
-    // CANVAS POINTER INTERACTION (STRUMMING & SHAPE PLACEMENT)
+    // CANVAS POINTER INTERACTION (CONTINUOUS STRUMMING & SHAPE PLACEMENT)
     // ============================================================================
     canvas.addEventListener('pointerdown', e => {
       ensureAudio();
@@ -1087,20 +1313,23 @@
       pointerDragged = false;
       lastPointerY = e.clientY;
       pointerStart = { x: e.clientX, y: e.clientY };
+      try { canvas.setPointerCapture(e.pointerId); } catch (_) {}
     });
 
     canvas.addEventListener('pointermove', e => {
       if (!pointerDown) return;
+      ensureAudio();
+
       const dist = Math.hypot(e.clientX - pointerStart.x, e.clientY - pointerStart.y);
       if (dist > 8) pointerDragged = true;
 
       if (lastPointerY !== null && e.clientY < staffTop - 8 && e.clientY >= playTop - 16) {
+        const clampedX = Math.max(marginL, Math.min(marginR, e.clientX));
         lanes.forEach(lane => {
           if (lane.type === 'guitar') {
             const crossedDown = lastPointerY < lane.y && e.clientY >= lane.y;
             const crossedUp = lastPointerY > lane.y && e.clientY <= lane.y;
             if (crossedDown || crossedUp) {
-              const clampedX = Math.max(marginL, Math.min(marginR, e.clientX));
               triggerLane(lane.index, clampedX, 'circle');
             }
           }
@@ -1109,7 +1338,7 @@
       lastPointerY = e.clientY;
     });
 
-    canvas.addEventListener('pointerup', e => {
+    function handlePointerRelease(e) {
       if (!pointerDown) return;
       pointerDown = false;
       lastPointerY = null;
@@ -1121,7 +1350,7 @@
       for (let i = shapes.length - 1; i >= 0; i--) {
         const s = shapes[i];
         if (Math.hypot(e.clientX - s.x, e.clientY - s.y) < hitRadius) {
-          ripples.push({ x: s.x, y: s.y, r: 12 * uiScale, alpha: 0.6, color: '#E598B8' });
+          ripples.push({ x: s.x, y: s.y, r: 12 * uiScale, alpha: 0.6, color: '#E895B8' });
           shapes.splice(i, 1);
           return;
         }
@@ -1165,17 +1394,33 @@
 
         triggerLane(closest.index, clampedX, geo);
       }
+    }
+
+    canvas.addEventListener('pointerup', handlePointerRelease);
+    canvas.addEventListener('pointercancel', () => {
+      pointerDown = false;
+      lastPointerY = null;
     });
 
     // ============================================================================
-    // AESTHETIC PASTEL RENDERING HELPERS
+    // SPATIAL PASTEL RENDERING HELPERS (ADAPTS TO LIGHT & DARK MODE)
     // ============================================================================
     function drawAmbientBackground() {
+      const isDark = currentTheme === 'dark';
       const skyGrad = ctx.createLinearGradient(0, 0, width, height);
-      skyGrad.addColorStop(0, '#FCF8F5');
-      skyGrad.addColorStop(0.38, '#F8EAF2');
-      skyGrad.addColorStop(0.72, '#EDE7FA');
-      skyGrad.addColorStop(1, '#E5F4F1');
+
+      if (isDark) {
+        skyGrad.addColorStop(0, '#0F0C1B');
+        skyGrad.addColorStop(0.38, '#17122A');
+        skyGrad.addColorStop(0.72, '#1C1632');
+        skyGrad.addColorStop(1, '#121D28');
+      } else {
+        skyGrad.addColorStop(0, '#FDF9FC');
+        skyGrad.addColorStop(0.38, '#F9EBF4');
+        skyGrad.addColorStop(0.72, '#EFE9FC');
+        skyGrad.addColorStop(1, '#E6F6F3');
+      }
+
       ctx.fillStyle = skyGrad;
       ctx.fillRect(0, 0, width, height);
 
@@ -1192,14 +1437,14 @@
         ctx.save();
         ctx.translate(sc.x, sc.y);
         ctx.rotate(sc.angle);
-        ctx.globalAlpha = sc.alpha;
+        ctx.globalAlpha = isDark ? sc.alpha * 0.62 : sc.alpha;
 
         const grad = ctx.createLinearGradient(-sc.radius, -sc.radius, sc.radius, sc.radius);
-        grad.addColorStop(0, '#FFFFFF');
+        grad.addColorStop(0, isDark ? 'rgba(255, 255, 255, 0.35)' : '#FFFFFF');
         grad.addColorStop(0.45, sc.c1);
         grad.addColorStop(1, sc.c2);
         ctx.fillStyle = grad;
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.75)';
+        ctx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.22)' : 'rgba(255, 255, 255, 0.78)';
         ctx.lineWidth = 1.5;
 
         if (sc.kind === 'sphere') {
@@ -1244,17 +1489,18 @@
     }
 
     function drawTriggerShape(s, lane) {
+      const isDark = currentTheme === 'dark';
       const r = 11.5 * uiScale * s.scale;
       ctx.save();
       ctx.translate(s.x, s.y);
       ctx.rotate(s.rotation);
 
       ctx.shadowColor = lane.color;
-      ctx.shadowBlur = (8 + s.pulse * 14) * uiScale;
+      ctx.shadowBlur = (9 + s.pulse * 15) * uiScale;
 
       const fillGrad = ctx.createLinearGradient(-r, -r, r, r);
-      fillGrad.addColorStop(0, 'rgba(255, 255, 255, 0.95)');
-      fillGrad.addColorStop(1, lane.glow || lane.fill || '#F7D6E0');
+      fillGrad.addColorStop(0, isDark ? 'rgba(52, 44, 78, 0.94)' : 'rgba(255, 255, 255, 0.96)');
+      fillGrad.addColorStop(1, lane.glow || lane.fill || '#FAD8E6');
 
       ctx.fillStyle = fillGrad;
       ctx.strokeStyle = lane.color;
@@ -1300,31 +1546,32 @@
     }
 
     // ============================================================================
-    // LIVE SCROLLING SHEET MUSIC DOCK (100% CONTAINED & RESPONSIVE)
+    // LIVE SCROLLING SHEET MUSIC DOCK
     // ============================================================================
     function drawSheetMusicDock() {
+      const isDark = currentTheme === 'dark';
       const dockPadX = Math.round(Math.max(10, width * 0.025));
       const dockX = dockPadX;
       const dockY = staffTop;
       const dockW = width - dockPadX * 2;
       const dockH = dockHeight;
-      const cornerRadius = Math.round(22 * uiScale);
+      const cornerRadius = Math.round(24 * uiScale);
 
       ctx.save();
 
-      // Frosted iOS Glass Card for Sheet Music
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.74)';
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.96)';
+      // Frosted Spatial Glass Card for Sheet Music
+      ctx.fillStyle = isDark ? 'rgba(28, 23, 46, 0.78)' : 'rgba(255, 255, 255, 0.76)';
+      ctx.strokeStyle = isDark ? 'rgba(216, 198, 255, 0.24)' : 'rgba(255, 255, 255, 0.96)';
       ctx.lineWidth = 1.5;
-      ctx.shadowColor = 'rgba(61, 53, 75, 0.09)';
-      ctx.shadowBlur = 20;
+      ctx.shadowColor = isDark ? 'rgba(0, 0, 0, 0.45)' : 'rgba(61, 53, 75, 0.09)';
+      ctx.shadowBlur = 22;
       ctx.beginPath();
       ctx.roundRect(dockX, dockY, dockW, dockH, cornerRadius);
       ctx.fill();
       ctx.stroke();
       ctx.shadowBlur = 0;
 
-      // Clip everything strictly inside the rounded dock card so nothing ever bleeds out
+      // Clip everything strictly inside the rounded dock card
       ctx.beginPath();
       ctx.roundRect(dockX, dockY, dockW, dockH, cornerRadius);
       ctx.clip();
@@ -1334,7 +1581,7 @@
       const headerFontSize = Math.max(9, Math.round(10 * uiScale));
 
       // Top Header Bar inside the Dock
-      ctx.fillStyle = '#7A708B';
+      ctx.fillStyle = isDark ? '#A99EC0' : '#766B8A';
       ctx.font = `700 ${headerFontSize}px -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif`;
       ctx.textAlign = 'left';
       ctx.textBaseline = 'middle';
@@ -1342,23 +1589,21 @@
 
       // Right-aligned "MADE BY SOU." signature quotation badge inside the score dock
       ctx.textAlign = 'right';
-      ctx.fillStyle = '#5E5274';
+      ctx.fillStyle = isDark ? '#CFC5E6' : '#5C5072';
       ctx.fillText('"MADE BY SOU."', dockX + dockW - 18, dockY + headerH * 0.62);
 
-      // Compute exact vertical geometry so steps -7 through +9 + stems + labels always fit inside the dock
       const minStep = -7;
       const maxStep = 9;
-      const totalSteps = maxStep - minStep; // 16 steps total
+      const totalSteps = maxStep - minStep;
       const usableStaffH = Math.max(48, dockH - headerH - footerH - 12 * uiScale);
       const stepSize = usableStaffH / totalSteps;
       const lineSpacing = stepSize * 2;
 
-      // Position step 0 (bottom line of the 5-line staff) accurately inside the safe box
       const staffTopY = dockY + headerH + 6 * uiScale;
       const bottomLineY = staffTopY + maxStep * stepSize;
 
-      // Draw 5 Staff Lines (steps 0, 2, 4, 6, 8)
-      ctx.strokeStyle = 'rgba(61, 53, 75, 0.2)';
+      // Draw 5 Staff Lines
+      ctx.strokeStyle = isDark ? 'rgba(224, 212, 255, 0.18)' : 'rgba(61, 53, 75, 0.2)';
       ctx.lineWidth = 1.1;
       for (let i = 0; i < 5; i++) {
         const ly = bottomLineY - i * lineSpacing;
@@ -1368,16 +1613,17 @@
         ctx.stroke();
       }
 
-      // Draw Clef (Treble 𝄞 or Bass 𝄢) scaled to staff height
+      // Draw Clef (Treble 𝄞 or Bass 𝄢)
       const instConfig = INSTRUMENT_CONFIGS[currentInstrument];
       const clefFontSize = Math.round(lineSpacing * 3.5);
-      ctx.fillStyle = '#3D354B';
+      ctx.fillStyle = isDark ? '#F4EFFC' : '#322A42';
       ctx.font = `${clefFontSize}px serif`;
       ctx.textAlign = 'left';
       ctx.textBaseline = 'middle';
       ctx.fillText(instConfig.clef, dockX + 24, bottomLineY - lineSpacing * instConfig.clefOffset);
 
       const fadeOutX = dockX + 24 + clefFontSize * 1.15;
+      const strokeInk = isDark ? '#EAE2F8' : '#322A42';
 
       // Update & Draw Scrolling Notes
       for (let i = sheetNotes.length - 1; i >= 0; i--) {
@@ -1400,10 +1646,10 @@
 
         ctx.save();
         ctx.globalAlpha = Math.max(0, n.alpha);
-        ctx.strokeStyle = '#3D354B';
+        ctx.strokeStyle = strokeInk;
         ctx.lineWidth = 1.3;
 
-        // Ledger lines below or above the 5-line staff
+        // Ledger lines
         if (clampedStep <= -2) {
           for (let s = -2; s >= clampedStep; s -= 2) {
             const ly = bottomLineY - s * stepSize;
@@ -1422,9 +1668,9 @@
           }
         }
 
-        // Note Stem (always points inward toward the middle of the staff so it never clips)
+        // Note Stem
         const stemUp = clampedStep < 4;
-        ctx.strokeStyle = '#3D354B';
+        ctx.strokeStyle = strokeInk;
         ctx.lineWidth = 1.4;
         ctx.beginPath();
         if (stemUp) {
@@ -1449,7 +1695,7 @@
           ctx.stroke();
         } else {
           ctx.fillStyle = n.color;
-          ctx.strokeStyle = '#3D354B';
+          ctx.strokeStyle = strokeInk;
           ctx.lineWidth = 1.3;
           ctx.beginPath();
           ctx.ellipse(n.x, ny, noteRx, noteRy, -0.3, 0, Math.PI * 2);
@@ -1462,7 +1708,7 @@
         ctx.font = `600 ${labelFontSize}px -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#5E5274';
+        ctx.fillStyle = isDark ? '#CFC5E6' : '#5C5072';
         ctx.fillText(n.label, n.x, dockY + dockH - footerH * 0.55);
 
         ctx.restore();
@@ -1476,6 +1722,7 @@
     // ============================================================================
     function animate() {
       ctx.clearRect(0, 0, width, height);
+      const isDark = currentTheme === 'dark';
 
       // 1. Draw Serene Pastel Sky & Floating 3D-like Sculptures
       drawAmbientBackground();
@@ -1490,7 +1737,7 @@
       for (let z = 0; z < PENTATONIC_ZONES.length; z++) {
         const zx = marginL + (usableW * z) / PENTATONIC_ZONES.length;
         if (z > 0) {
-          ctx.strokeStyle = 'rgba(61, 53, 75, 0.07)';
+          ctx.strokeStyle = isDark ? 'rgba(216, 198, 255, 0.11)' : 'rgba(61, 53, 75, 0.08)';
           ctx.lineWidth = 1;
           ctx.setLineDash([4, 6]);
           ctx.beginPath();
@@ -1499,7 +1746,7 @@
           ctx.stroke();
           ctx.setLineDash([]);
         }
-        ctx.fillStyle = 'rgba(61, 53, 75, 0.42)';
+        ctx.fillStyle = isDark ? 'rgba(224, 212, 255, 0.54)' : 'rgba(61, 53, 75, 0.46)';
         ctx.font = `600 ${zoneFontSize}px -apple-system, BlinkMacSystemFont, sans-serif`;
         ctx.textAlign = 'left';
         ctx.textBaseline = 'middle';
@@ -1516,15 +1763,15 @@
       lanes.forEach(lane => {
         // Left pill label scaled to device width
         ctx.save();
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.76)';
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.96)';
+        ctx.fillStyle = isDark ? 'rgba(42, 35, 66, 0.82)' : 'rgba(255, 255, 255, 0.78)';
+        ctx.strokeStyle = isDark ? 'rgba(216, 198, 255, 0.25)' : 'rgba(255, 255, 255, 0.96)';
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.roundRect(pillX, lane.y - pillH / 2, pillW, pillH, pillH / 2);
         ctx.fill();
         ctx.stroke();
 
-        ctx.fillStyle = '#3D354B';
+        ctx.fillStyle = isDark ? '#F4EFFC' : '#322A42';
         ctx.font = `700 ${labelFontSize}px -apple-system, BlinkMacSystemFont, sans-serif`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -1533,13 +1780,14 @@
 
         if (lane.type === 'guitar') {
           ctx.save();
-          ctx.strokeStyle = lane.vibAmp > 0.35 ? lane.color : 'rgba(61, 53, 75, 0.25)';
+          const idleStringColor = isDark ? 'rgba(226, 214, 255, 0.26)' : 'rgba(61, 53, 75, 0.25)';
+          ctx.strokeStyle = lane.vibAmp > 0.35 ? lane.color : idleStringColor;
           ctx.lineWidth = lane.thickness;
           ctx.lineCap = 'round';
 
           if (lane.vibAmp > 0.35) {
             ctx.shadowColor = lane.color;
-            ctx.shadowBlur = 10 * uiScale;
+            ctx.shadowBlur = 11 * uiScale;
           }
 
           ctx.beginPath();
@@ -1563,7 +1811,8 @@
           ctx.restore();
         } else {
           ctx.save();
-          ctx.strokeStyle = lane.flash > 0.05 ? lane.color : 'rgba(61, 53, 75, 0.16)';
+          const idleDrumColor = isDark ? 'rgba(226, 214, 255, 0.18)' : 'rgba(61, 53, 75, 0.16)';
+          ctx.strokeStyle = lane.flash > 0.05 ? lane.color : idleDrumColor;
           ctx.lineWidth = (1.8 + lane.flash * 2.2) * uiScale;
           ctx.setLineDash([6 * uiScale, 8 * uiScale]);
           ctx.lineCap = 'round';
@@ -1602,7 +1851,7 @@
         }
 
         ctx.save();
-        ctx.fillStyle = '#FFFFFF';
+        ctx.fillStyle = isDark ? '#231D38' : '#FFFFFF';
         ctx.strokeStyle = lane.color;
         ctx.lineWidth = 2.2 * uiScale;
         ctx.shadowColor = lane.color;
@@ -1649,7 +1898,7 @@
         });
 
         ctx.save();
-        ctx.fillStyle = '#FFFFFF';
+        ctx.fillStyle = isDark ? '#231D38' : '#FFFFFF';
         ctx.strokeStyle = orb.color;
         ctx.lineWidth = 2.6 * uiScale;
         ctx.shadowColor = orb.color;
@@ -1693,7 +1942,7 @@
         ctx.restore();
       }
 
-      // 8. Draw Bottom iOS Glass Live Sheet Music Dock
+      // 8. Draw Bottom Live Sheet Music Dock
       drawSheetMusicDock();
 
       requestAnimationFrame(animate);
